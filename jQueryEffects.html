@@ -16,14 +16,23 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+    <ul id="menu">
+        <li>
 
+            hello
+        </li>
+    </ul>
     <p>Click anywhere to apply the effect.</p>
     <div></div>
 
+
     <script>
-$( document ).click(function() {
-  $( "div" ).effect( "bounce", "slow" );
-});
+        $(document).click(function () {
+            $("div").effect("bounce", "slow");
+        });
+
+        $(".selector").menu("blur");
+
     </script>
 
 </body>
