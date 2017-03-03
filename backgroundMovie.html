@@ -1,11 +1,50 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>Video background</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <style>
+        #videoplayer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        #rawvideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+   
+    
 </head>
 <body>
-    <video id="vid" style="left: 0px; top: 0px; width: 100%; height: 626px; opacity: 0.1;display: block; opacity: 1;" oncontextmenu="return false" src="content/rain.mp4" preload="auto" autoplay loop> </video>
+    <video id="vid" style="left: 0px; top: 0px; width: 100%; height: 626px; opacity: 0.1; display: block; opacity: 1;" oncontextmenu="return false" src="content/rain.mp4" preload="auto" autoplay loop> </video>
+
+
+
+
+    <div id="videoplayer" width="600" height="800"></div>
+
+    <H1>TEST TEXT OVERLAYING THE BACKGROUND</H1>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio leo, auctor eget scelerisque nec, tincidunt eget eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eget pharetra augue, id pellentesque metus. Morbi viverra massa velit, eu ornare lorem cursus vel. Suspendisse auctor est ut dui pulvinar, ut scelerisque mi varius. Nulla et pulvinar lectus. Nulla volutpat eros augue. Fusce mi tortor, aliquet non neque vel, hendrerit gravida nisl. Cras sagittis mi sit amet porta posuere. Vivamus pellentesque mattis feugiat. Nam scelerisque, tellus vitae auctor tempus, leo leo fermentum mauris, ac rhoncus velit justo ut arcu. Proin tempor non sem nec accumsan. Sed elementum auctor diam nec molestie. Duis quis commodo arcu. Pellentesque sollicitudin nibh quis massa accumsan, ut posuere ipsum porttitor. Nulla egestas fringilla ligula, sit amet lobortis ex facilisis non.
+    
+<script>
+    var videoList = ["Content/Clouds.mp4", "Content/sea.mp4"];
+    videoList.sort(function (a, b) { return 0.5 - Math.random() });
+
+    $("#videoplayer").html("<video id='rawvideo' autoplay poster='' id='bgvid' loop><source src='" + videoList[0] + "' type='video/mp4'></video>");
+</script>
 
 </body>
 </html>
