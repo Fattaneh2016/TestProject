@@ -34,6 +34,53 @@
         $(".selector").menu("blur");
 
     </script>
+    
+    
+    <script>
+            $( document ).click(function() {
+                $("img").stop().slideToggle('slow');
+
+
+            });
+
+            $('img').click(function () {
+                if ($('img').is(':visible')) {
+                    $('img').fadeOut(function () {
+                        $('img').toggle('explode', {
+                            direction: 'left'
+                        }, 1000);
+                    });
+                }
+                else {
+                    $('img').toggle('slide', {
+                        direction: 'left'
+                    }, 1000, function () { $('#img').fadeIn(); });
+                }
+            });
+
+
+            $("button").click(function () {
+                $("#div1").fadeTo("slow", 0.15);
+                $("#div2").fadeTo("slow", 0.4);
+                $("#div3").fadeTo("slow", 0.7);
+            });
+
+
+            $("button").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+
+            $("button").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            });
+
+
+    </script>
+
 
 </body>
 </html>
