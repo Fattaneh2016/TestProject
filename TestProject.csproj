@@ -202,6 +202,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="BootstrapModal.html" />
+    <Content Include="header.html" />
     <Content Include="jQueryEffects.html" />
     <Content Include="Navbar.html" />
     <Content Include="Scripts\bootstrap.js" />
