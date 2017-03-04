@@ -195,6 +195,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Clouds.mp4" />
     <Content Include="Content\Cloudy.mp4" />
+    <Content Include="Content\farahPars7.jpg" />
     <Content Include="Content\Rain.mp4" />
     <Content Include="Content\sea.mp4" />
     <Content Include="favicon.ico" />
@@ -202,7 +203,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="BootstrapModal.html" />
-    <Content Include="header.html" />
+    <Content Include="OverlayDiv.html" />
     <Content Include="jQueryEffects.html" />
     <Content Include="Navbar.html" />
     <Content Include="Scripts\bootstrap.js" />
