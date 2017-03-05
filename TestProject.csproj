@@ -102,6 +102,10 @@
       <Private>True</Private>
       <HintPath>..\..\..\..\..\Users\fattaneh\Documents\Visual Studio 2015\Projects\Farah Website\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="VisualStudio.SpellChecker.Definitions, Version=2015.9.19.0, Culture=neutral, PublicKeyToken=c626d3cbee5c69d2, processorArchitecture=MSIL">
+      <HintPath>packages\EWSoftware.VSSpellChecker.2015.9.19.0\lib\net40\VisualStudio.SpellChecker.Definitions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\..\..\..\..\Users\fattaneh\Documents\Visual Studio 2015\Projects\Farah Website\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
